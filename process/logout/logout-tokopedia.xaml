@@ -1,0 +1,136 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="credentials" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,864" sap2010:WorkflowViewState.IdRef="credentials_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="credentials" sap:VirtualizedContainerService.HintSize="545.6,799.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open shopee" sap:VirtualizedContainerService.HintSize="483.2,687.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="248b1c92-c94d-4879-943d-77ef43ccafe4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,470.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:PasswordCredentials" Name="credentials" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NHover DisplayName="Hover 'Alvin Triyanto'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHover_1" ScopeIdentifier="248b1c92-c94d-4879-943d-77ef43ccafe4" Version="V3">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable BrowserURL="https://seller.tokopedia.com/" CvTextArgument="Alvin Triyan..." CvType="Text" DesignTimeRectangle="1685, 150, 170, 45" DesignTimeScaleFactor="1.25" FriendlyName="'Alvin Triyanto'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='header-main-wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-qf6p8n' parentid='header-main-wrapper' tag='DIV' aaname='' check:innerText='Alvin Triyanto' /&gt;" Guid="88c366f0-19b3-44f5-9789-f139990cc497" ImageBase64="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" InformativeScreenshot="db67930eee0588ece0faac52cd25a1d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Seller Dashboard | Tokopedia' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NHover.Target>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Keluar'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="248b1c92-c94d-4879-943d-77ef43ccafe4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://seller.tokopedia.com/" CvElementArea="1414, 551, 175, 104" CvTextArea="1600, 557, 204, 21" CvTextArgument="Tips untuk Toko Online" CvType="Icon" DesignTimeRectangle="1455, 534, 390, 50" DesignTimeScaleFactor="1.25" FriendlyName="'Keluar'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div' idx='3' parentid='coachmark-id-profile' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-e3swto' parentid='coachmark-id-profile' tag='DIV' aaname='' check:innerText='Keluar' /&gt;" Guid="fd114e99-a3ed-498b-bcbb-5d84350b3946" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYoAAAA2CAYAAADZAd6qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVOSURBVHhe7d3NS1xXHMbx/isuBJFQLIgFEQmuBCUoChFFEUtBF+rCRVCsDXVlXARd1EI3QlYqhipV3PmC4kuorkRQNyoRFWOikkBAPeU5zJlcBz06mZtxjN8P/HDuuW+zOs+ce85NfjAAAHgQFAAAL4ICAOBFUAAAvAgKAIAXQQEA8CIoAABeBAUAwIugAAB4ERQAAC+CAgDgRVAAALwICgCAF0EBAPAiKAAAXgQFAMCLoAAAeCUcFG/f7ppffm0wP/70861Kx+ocAMD9kHBQBEOisKjkxtJxv/3+R+RsAECqSzgoXEDchkYSblQBALgfvrug+PTpk2lubjZpaWmmtLTUHB0dRfYYc3h4aKqqquy+9PR0MzQ0ZC4uLiJ7bzY4OGjPzcvLMxsbG5FWAPi+PZigODs7My9fvrTtKn1WWzwICgAPUVKDQv7862/z5s1/kS1j/hn5N9QJ7uuCYnp62jx69Mi2V1RUmP39fdseD4ICwEOU9KCIpeBw1wgjLK4Kis3NTVNQUGDb9Hd9fT1ydHwICgAP0Z0HhYQZFrFBsbOzY1paWuy25iWGh4cjR35xfn5uZmZmTGVlpT0mIyPD1NXVmaWlpUtzGFcFhYJI91F7V1eXbZPg99BfbTtbW1umra3N5OTk2HvV1NTY++t7SPCanZ2d9jvn5uZeuj4AJEtKBIWEFRbBDvrJkyemt7fXflZdNS8RO3cRLIXGq1evoueEERRzc3MmKysreo9g9fX12WAKXjMzM9N+D30mKADchZQJCgkjLIIddLCePn1qDg4OIkd9MTY2Fu2I29vbzfb2tp2/UMCoXZ368vKyPTbRoDg5OTG1tbW2TfMku7u75uPHj6a1tdW2FRUVmb29vUvXVD1+/Nhee2JiInJ1AEiebxYUmqRWe7yl6yUSFsEOWh29fpHrc7DDd4LHatns+/fvI3uM7cDr6+vtvhcvXthf+okGxenpqZmfnzezs7M2kNxxIyMj9jhNtq+srFy6ZnFxsQ0UALgr3ywoNDoIdvxfU18j2EGrs339+vW1q530612/4rXPV66jD+PR0+fPn83k5KSdN9EchbuHq4WFhUvXfP78edzLeAEgTCn16EmjEBcSwSW08YgNCgVDcA5CowPX8aqzV6fv9l1X5eXldrSRaFBolOIm1lX5+fl2u6OjI9oWGxTBawLAXUiZoAgjJCQ2KNTpKiw0mlCbHkdpXkLevXtnysrKbLseM6kjd7QCSeGg8/VX2zcFRfDX//HxsamurrbtLiimpqbs/TXC0ajCragaHR21x6kICgCpJiWCIqyQkKuCQjQ/4VYbuXcp1FFrpZHrpDWpvLa2Zpevdnd32049GCwuKLKzs22H7kYJjY2N0esuLi7afyqkv7/fnqt2FxR6DKZtFxQKFX2vkpIS264iKACkmjsPijBDQq4LCoXCwMBAtENuamqynbzq2bNn0fZgqaPv6emJjhLGx8cv7VdwiN5zcKHgSttuIt0FxXWPutwcioqgAJBqkh4UmuRWODhuSWwYISHXBYXEzhG49ypUWomkx0+aN1BplKAX7txLcPLhwwcbKi4UXFDofPdSnNoLCwvtUlaFkbZdUMjq6qppaGiwL9rpPpoz0bnuOxEUAFJNUoNCy111PP/MOADcHwQFAMAr4aBQSKhu83IcQQEA908oQaHOP57iv0IFgPsj4aDQKMGNKm5TConbjD4AAKkh4aAAAHzfCAoAgBdBAQDwIigAAF4EBQDAi6AAAHgRFAAAL4ICAOBFUAAAvAgKAIAXQQEA8CIoAABeBAUAwIugAAB4ERQAAA9j/gcY75cZ9b21ewAAAABJRU5ErkJggg==" InformativeScreenshot="73927ef2d5890881da04a9dd0452eb71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Seller Dashboard | Tokopedia' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAzxJREFUWEe9Vl2ITVEUHkKJ4sEDSSkepM4+d5wGk2JKojj73DHdQn6iKJOHeRAvyg0PiFBeRKE8ECYpefHkiadJPCj5e0HUOefOLyaOb+1Z19n33jXXmZk7vvrqtNa397f22j/3No0HSaEwI9S5zXGgDhPpm2KcnlxE2t0X+epb6DuJTYpRjmWTg0irc2w2DN4Du5j0PWxy0LC8sShptWnEwPkCruXwX1CMcqQhLYcbg6TQOjPynbfg75KvVnO4BpQjDbrwjsZweOKItbOf23uTQ6MCmhukpTEcmjjQ2m6aNPTdLRwaFXQjeKu6OTRxhFq9okkHtnoLODQqSGOKxRgOZYMx0SqWSPvKk4r5GlIHaIyUG2FtcQgOGpP/QjXAtilwj7/K4saTrivbpsDpfS+J6xFt/o7Jfkm5esSYN2ybAm15KYlrqJ0+FFuM896SpFicmhTbptF3qN1DiPeIY6pIOrZNgTPwTBJXUg3EeccjY7x22/D2X4bxGUy4Jym0zU6SZAq+H8hjU0LzlG1T4Aw8kcQ2MbBotIIJtiPEHJeoyOqcwEfG1EaWykuBWtUXNC+XcmOidu6wbQocjFui2GKvzq0ZLLgLy7984yUWe41tU6CqK5LYJu05aemdpxsgabIQBVwwpjbQgfOS2Ca9blGgdht9PrcYB/csCv8kaesRCzlpTG2ggBOSWKa6TbeBxtGNoB+pbLdohOjgEWNqg4KSuB7Ryh6chy50Yy4VEvvOUcR+StoKanWQbVOEgeoUxZmo+sv/B1HAcVljUbs7jakN2ltRPAbGOrfB/GP2naHqnE10LM+2KeK86pDEYyFWf5HmwvfH6pxNeK03pjZKgbtREldQq8f13oAocPcmB7zptCVSvsxS3l3JtinokZHEZcL4udF1eMvw/bDqHRgKA+c0HcQsW0mvqTG1gX3JSWKbML7au92bR3raa1pJb3tza1jw5lAMRez41+qJg0HLItJXoKRXLJXE1cR78QN7fZeuEh26qL15Ha0asfuSXiJdW7ZN0V9omS+JJ4P0H4JtU2S5Pg3iZ7asBU7xdWFAQxn76hTb1SLZpWbRXcb+vsaB+9BQaucFeKyy/U1NfwDIiGWwXJXQnwAAAABJRU5ErkJggg==" InformativeScreenshot="16f441a626026ecac1c490818c59e0c2.jpg" Selector="&lt;html app='chrome.exe' url='https://seller.tokopedia.com/' /&gt;" Title="Shopee Indonesia | Situs Belanja Online Terlengkap &amp; Terpercaya" Url="https://seller.tokopedia.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

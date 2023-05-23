@@ -1,0 +1,133 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="credentials" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="535.2,904" sap2010:WorkflowViewState.IdRef="credentials_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="credentials" sap:VirtualizedContainerService.HintSize="545.6,839.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Seller Centre" sap:VirtualizedContainerService.HintSize="483.2,727.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="b037e2a8-3fa8-4d55-92d8-26809438b01b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,470.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NHover DisplayName="Hover '8o53xuu5sy'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHover_2" ScopeIdentifier="b037e2a8-3fa8-4d55-92d8-26809438b01b" Version="V3">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/?is_from_login=true" DesignTimeRectangle="1443, 122, 94, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'8o53xuu5sy'" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='account-name' aaname='8o53xuu5sy' check:innerText='8o53xuu5sy' /&gt;" Guid="bdb47991-d34b-435b-887a-699adf8f36a9" ImageBase64="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" InformativeScreenshot="49d8ae4c77f0d9067ccd97515254fad3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NHover.Target>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b037e2a8-3fa8-4d55-92d8-26809438b01b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/?is_from_login=true" DesignTimeRectangle="1424, 338, 133, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl aaname='Logout' class='text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' class='text' tag='SPAN' type='' check:innerText='Logout' /&gt;" Guid="61258214-01ac-444e-9041-03e71d5f4832" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIkAAAAbCAYAAABIiqyBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMdSURBVGhD7Zg9a9tQFIb7nzR5MBgCgQz1Yk2eajrUBCIIREtMh2YJLhThIXQIGoIJ1ASKPBQZSoaAA0Yegjo5UBwoeAgIAoIMAcPbc30l+8ZqkJ3YSR3OAwLfD32Y8+iec/UGDJMCS8KkwpIwqbAkTCosCZMKS8KkMpHk2oGhaTCaQdSxggxD9Jp7qP+K2sxCeF2SRP/BuojazEJgSZhUHidJ2INbM6GvadDonFzBhNXq4y4ajgm6dVTe5UZzMhsG7G4Ar0bnbDlQ7xJ0aN77dWRonpZdR+ljHZ464cKiaxhwrqN2jNo/+i2fRx4WfDmLeSLzS3LrwyqIYJZgNdvwOi7qu8VRgPWaPxbljoKmU19u04Jz5sE9qqCY1aGLcxVJBk1DnrtTh9vx0G5aKAv5shT8QTRpFklu+vBaFop0LfPYo+fqI5SzmCcytyS9w7wMTBzAiP5xifpLaPyhxrAH+y2tHtsOBkM5LojFGUty48Kkdv6Ld38VCtuoZun8z1H/LJIION0shTklkcHX9tuJ1BIHvPitD1zayNPv6vn0rAGcDxNJwp8VCnIRjSs5qiJlrKItLsGSvChzSkKpJhYhgRzTKOWgK4JXTqw2Al+pSQJKNWMRppBjkQAsyYuyFEnuzqssySti4emm/J3MeDDdBHC2JpKkpxsLnqhpRjLkYV/KsZjghyKSgCVZCgsuXHXUf1PjgcIVVw2U6B4zF66fTuUOJZLObCn7lSHVN0I4lmTpJCTJb1dx8PUgeZz4MmCzboE7VeSoL94Ct0/2aAucQYaCP5aEmGkLLKRT73nmwNrMQd82aMurSBKeoiL+w24Dbd4CL4yEJPc/SCmHEth/fUyzzwaJFBR0bZgF9WOafy/dxCQ+pu034E8vaIEHe0cfiaet6TAPPQQD8cyKJPQEvSMD60JE6nenr8E8iokkz0K0Bab0wqwOy5FELPv0tldaU6/y6M1Pr3uY/4slrSQhTnczlDqKqBy5VLcotUbBgn8bTWNWguWlm2EA79BEcYNkieuImoseV5MrxzPXJMwqwpIwqbAkTCosCZMC8BddULGDCvg0NwAAAABJRU5ErkJggg==" InformativeScreenshot="9b3138c8233adcb9c0c9a3875db82044.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKQSURBVFhHvVe7btRAFPUn8AmUaLFXrqnSRYps2IKCjqD0CS0CCYo0dFvRUIAUiZbQJ9oSCYpIaZImpIoEYncHks2LTZjMGd+78Xhv1uPs40hHlmeu55x53JlxUBWqUYt/J2Gzm9b3u2mkDZVhSz2sP6WQ6UEl9dckyoQJGBi8q8a9uxQ+WeTEVScJ36hGfIeqAjMicxCfmgmVCVhxIxxT8RDaSfSR4lpUNBl0k/oWGi6bZ4wKTCIWo0LF4wHDSb3ap6KRwPQg3jybVDQeOun952hQpdEHKhoJMwqVDFuohVqMeZbYMcK2R+Yp1UskA1qqG3DuehEH/MEs2U5riyRvDeRzeSYsGuAcnhnNmnpE8tUNqCcP9N/lx7rXfKUPXzzTf5bmxbhRdNKU89yHp5/e6f+9Q13Exd6uNSR9I7FgIGpJQUWefVmzYv+2vw16jmev+VL3t7/buqPVZfHbIpF5JI9cjz5LQXlCDDjbWBfrQZiRyiU650Xneg+/kRhewLeHZXT2AR8D6B2ANSDVVyVJZ8C+LQUVefnzwJo4fv9WrK9Cks7AB0gZsQ7YxOWvA2vkNiloqEg6g68BJlY9GwH6JiuqpKChe1C1F6JFIaiU2IyQFWwGaYpNSop1mIRbJJ3htgaYED2lPQImpBiXoXtjGtcAkzej8lEoGMD5LAdW44lJUcBjYa6TdAYfA2i0rOFzsx6AshEYul3hZ0MKzPPix65tHHNcNAJBPidGbdXMofti7h53IyF6/nXTigA4/ZB+ePLpiEPKJwuQ9iSdwccAE6mHFY8F19/bsUSvj1ZXxHiJkgHc58XgadC5jjFMxczuhc51jOFzJ5gQzb9jPPzviGnwOZbHYhK2jE7u3zIIrgBemnWcZ/DkwgAAAABJRU5ErkJggg==" InformativeScreenshot="56de4a9693ed23faf9386450a2bab0e1.jpg" Selector="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" Title="Shopee Seller Centre" Url="https://seller.shopee.co.id/?is_from_login=true" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
