@@ -67,11 +67,33 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "process/entry-data/entry-data-shopee.xaml",
+      "Path": "process/manage-data/entry-data-shopee.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "directoryPhoto&Sequence_2",
-        "sheet1&Sequence_1"
+        "rowNumber&Sequence_1",
+        "arrStock&Sequence_2",
+        "arrAmount&Sequence_2",
+        "arrSelect&Sequence_2",
+        "shopee&Sequence_1",
+        "directoryPhoto&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "process/manage-data/Workflow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "data7&Sequence_1",
+        "data6&Sequence_1",
+        "data5&Sequence_1",
+        "rowNumber&Sequence_1",
+        "arrData&Sequence_1",
+        "data4&Sequence_1",
+        "data3&Sequence_1",
+        "data2&Sequence_1",
+        "data1&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

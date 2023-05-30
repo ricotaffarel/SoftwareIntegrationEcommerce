@@ -1,0 +1,318 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="entry_data_shopee" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,416" sap2010:WorkflowViewState.IdRef="entry_data_shopee_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="main" sap:VirtualizedContainerService.HintSize="668.8,1612.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="shopee" />
+      <Variable x:TypeArguments="x:Int32" Name="rowNumber">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Seller Centre" sap:VirtualizedContainerService.HintSize="606.4,1500.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="d738dd36-6104-4080-8b3b-e1a8f0781aaf" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572.8,1284" sap2010:WorkflowViewState.IdRef="Sequence_44">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="s:String[]" Name="arr" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[arr]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[{"1000", "2000", "3000", "4000", "5000"}]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510.4,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arr]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,429.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Rp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_90" ScopeIdentifier="d738dd36-6104-4080-8b3b-e1a8f0781aaf" Text="[currentItem]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/new" CvTextArgument="Mohon masukkar" CvType="Text" DesignTimeRectangle="847, 516, 137, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' idx='{0}' type='text' /&gt;&quot;, rowNumber)]" FuzzySelectorArgument="&lt;webctrl class='shopee-input__input' tag='INPUT' type='text' aaname='' /&gt;" Guid="df56ca92-94e1-4cc1-8580-9cb6ee3d4cbf" ImageBase64="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" InformativeScreenshot="0728d8234754aa1d2f98ac5b2139b64f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="787, 569, 215, 42" CvTextArea="804, 581, 22, 20" CvTextArgument="Rp" CvType="InputBox" DesignTimeRectangle="806, 516, 42, 38" FriendlyName="'Rp'" FullSelectorArgument="&lt;webctrl class='shopee-input__prefix' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='shopee-input__prefix' type='' parentid='app' tag='DIV' aaname='Rp' check:innerText='Rp' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAqCAYAAADMKGkhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH8SURBVFhH7ZnJisJAFEX9tt70NzpPqDgtxRFciC4cUBcuRHQjDiAqiogI8pr7qOqBRkxpUk3oOlCYvCRyUnVfIeghl+Kh9zdy43DxjLsUI64bI64bI64bI/4su91OHKnhfvHj8UjZbJZisdiPkc/naTgc0vV6FXfay8vih8OBRePxOJVKJR7FYpESiQT5fD5+gfP5LO62D1Xx9XpN9Xr9t3ihUBCVL1qtFst3u11RsQ9V8eVySZVKxZr4fr+naDT6eW08HvNb4xnECKtTLpdpNpvxdRW0ijebTfL7/RQKhSgSiVAul+NjrApWRwVHxWVUer0en0Pc6/VSo9Gg2+3GNeQffRAOh2m1WnHNCraJf29OjFQqxdJ4IbmzQDwYDNJ8PudzCSKElVDpBdvEA4EAf2Jg9jCzmHE5s+CeuIwU8m8VR6KCvR3bITJ8uVxE9b64/A5so1ZxLOOdToejMhgMROW++GKx4CbFdas4Jn46nSidTlMymeQVABBDpKbTKZ9L2u02Z3wymYjKYxwTB6PRiIXkTOIT2cf9aEg82+/3eRWws3yP1SMcFYcIco7G22w2n1Gp1WocDbwERiaT4QZV4WVxFaQ4Mo7dBhF69nfMn4m/iqq45H+JoyGr1Sptt1tReR6t4nbiWvFnMeK6MeK6MeK6MeK6MX8X6oXoAzoP9/lCscaeAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[rowNumber]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[rowNumber+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <Assign sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[rowNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510.4,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[arr]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,429.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '0'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_91" ScopeIdentifier="d738dd36-6104-4080-8b3b-e1a8f0781aaf" Text="[currentItem]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/new" DesignTimeRectangle="1057, 602, 179, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'0'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' idx='{0}' type='text' /&gt;&quot;, rowNumber)]" FuzzySelectorArgument="&lt;webctrl class='shopee-input__input' tag='INPUT' type='text' aaname='' /&gt;" Guid="634190cc-2e9f-49b5-835a-95c5719b2075" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALcAAAAqCAYAAADxlsoCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHQSURBVHhe7d2xy3lRHMfx538yGQ1KUjJIJqWUXZKUySwZbP4Bm0lZzTLKoiQWg1BE+Pw6nvO7v/Q8w290v71fdZavO7473XPu4EuAUV+bzUYslsXFzg2ziBtmETfMIm6YRdwwi7hhFnHDLOKGWcQNs4gbZhE3zCJumPUj7sVioWq1qmg0qlgsplarpe12638FwuMt7vl8rkQioUqloslkotFopHw+r1KppN1u558CwiGI+36/q91uq1wu63A4+Om/4IfDoZ8A4RDE7YIuFovq9Xp+8u18Pqter79eT263m58Cny+Ie7VaKZ1O/9ihn8+nOp2OGo2GLpeLnwKfL4h7uVwqlUr9+vrR7XZVKBS03+/9BPh8xA2ziBtm/Xfc7lDpDpdAWARxu13Z7c79ft9PvrlDpDtMNptNXa9XPwU+XxC3u+Zz133uA87pdPJTab1eK5PJaDAY+AkQDkHcznQ6VTwef72GuC+S7nqwVqspm82+IgfC5C1ud6c9Ho+VTCYViUReK5fLaTab+SeA8HiL+6/H4/H6Ynk8Hl/BA2H0a9yABcQNs4gbZhE3zCJumEXcMIu4YRZxwyzihlnEDbOIG2YRN8zir/pYZhc7N4yS/gAGbNbgvFsSdwAAAABJRU5ErkJggg==" InformativeScreenshot="98c07702450cd8400dd195f282573f54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="1039, 600, 213, 43" CvTextArea="1055, 611, 11, 16" CvTextArgument="0" CvType="InputBox" DesignTimeRectangle="1041, 601, 211, 40" ElementType="InputBox" FriendlyName="'0'" FullSelectorArgument="&lt;webctrl aaname='  ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  ' type='' parentid='app' tag='DIV' class='shopee-input__inner shopee-input__inner--normal' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANcAAAAsCAYAAAD2KC1vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJdSURBVHhe7d2/q/FRHMDx538y3dGgJCWDZFJK2SVJmcySweYfsJmU1SyjLEpiYBCKCJ+nj/ule/3qXt3P89T3vl91lpP13fk638P5IwBMEBdg5Cau9Xots9lMJpOJjMdjBoPxYGgj2oo2c8+nuBaLhUynU9lsNnI8Hp1ZAPdoI9qKNqPtXLvEpfXph4gK+B5tRtu5XsEucenyphUC+D5tRxv66BKXPj+yagGv0Xa0oY8ucekXNACvu26IuIAfQlyAEeICjBAXYIS4ACPEBRghLsCIeVz9fl8ymYy8vb2J1+uVYrF483INcCPTuHq9nvj9fkmn09Jut6XZbEosFpNkMnlzNARwG7O49vu9lEolSaVSn04In4NrNBrODOBOZnFpUIlEQqrVqjPzTk8K53K50+PhbrdzZgH3MYtrOBxKKBS6WaH0QGO5XJZ8Ps+pe7iaWVyDwUCCweDdx79KpSLxeFzm87kzA7gPcQFGiAsw8t/i0k2NR3/kAbiBWVy6KunqVKvVnJl3uomhmxmFQkG2260zC7iPWVy6za7b7foCebVaObMio9FIwuGw1Ot1ZwZwJ7O4VKfTEZ/Pd3oM1BMZuj2fzWYlEomcIgPczDQufafVarUkEAiIx+M5jWg0Kt1u1/kE4F6mcZ0dDofTiY3lcsk/SuHX+CdxAb8RcQFGiAswQlyAEeICjBAXYIS4ACPEBRh5GBdXCAGve3qFEJffAa97evkd17YCr9Fmnl7bqrhwHPg6bURb0WaeXjh+pvXp8qbPj/oFjcFg3B/aiLby6Bf2N3EB+BnEBZgQ+Quw/U+Uz9ZcUgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[rowNumber]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[rowNumber+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <Assign sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[rowNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510.4,617.6" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[arr]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,429.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_92" ScopeIdentifier="d738dd36-6104-4080-8b3b-e1a8f0781aaf" Text="[currentItem]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/new" CvTextArgument="Mohon masukkan" CvType="Text" DesignTimeRectangle="1303, 654, 317, 23" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;textarea' tag='TEXTAREA' idx='{0}' /&gt;&quot;, rowNumber)]" FuzzySelectorArgument="&lt;webctrl type='textarea' tag='TEXTAREA' class='shopee-input__inner shopee-input__inner--normal' aaname='' /&gt;" Guid="2e380961-a870-4161-9245-516baf576a76" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUEAAAAbCAYAAADibD0UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAYbSURBVHhe7ZuHTuU8EIX/938heu+9d1FF770J8OozGf7BJNx72QUEOZ8UXcUZjydm52TsZP8LQghRYiSCQohSIxEUQpQaiaAQotRIBIUQpebLRXBlZSUMDQ2F4+PjrEVUYmdnJwwMDMTfIjSvQnyMVyI4MzMTmpubQ19fX7i/v89a33JwcBDa2trisbu7m7VWx8TERGhsbAzb29tZi6jE8vJyqKuri79FaF6F+BivRJBEItkaGhrC5uZm1vqW6enpaPeRpFOy1o5EUIjPI1cE6+vr49Iqj+vr69De3h5tJIJfg0RQiM/jjQiyHO7u7g6tra3h/Pw8u/I/q6urUQB7enpyk46l8sjISNzD4pdzjyXr1tZW3McaHByMtktLS+Hx8TGzeoZzbzM1NRVubm6yqyEu2ScnJ+NBrFzHDgHf39/PrN6CkBPb7Ozsq3jHx8fD2dlZeHp6ipUwfvLGhTQ265uSzgfzhX/wcXjY12Ns/EOeCNJ3bGws9r+4uMgVwdPT0zA8PBxju7u7i22V4vYx0c517EZHR8PJyUlmJcTvIVcE5+fno9AtLCxkV555eHgIvb29USBJEp90JDZiRD98YNfU1BTPWT5b4jMGy2180L+rqyv+kuT0N0hGrtGfyhNhNt/2guD29jZ0dnbGNsbCZ0dHR7TDZ9GLBJKbPthw0Ie+9OMXgSBG2rEjNmJhPPCxMT73ij2+EHcDYbeYseGXc+6T+bA4+vv7sx7PMKf4Yq4gFUHGxx82tm2RiiACyLxxP4eHh7GtmrgtJg7mFB9W+eMLv0L8Jt6IIAmxvr4e/+GTMP4Fyd7eXrxOBUJC+qTb2NiICUXVgFgCfUlwb8cYJDTt5pvkRHAY8+rqKgoElQeJh5AYJDOJSAIjSCaC2C0uLr4ILcLAmPjIwxK9paXlRSAA8Sc2xrC3rPgkZsZYW1uLbTwcbEwDPyZo9KE6ww8Vs58PzrHD/0dEEF/McTo3XgSZT+aFcy/K1cTtHxB+X5g+9E0fjEL8dHJFkESiekPUfCLQxnXEkCWi2QJJROVwdHQUzw0TThMkxsCvT06gP8lHErK0RaC8gBgWF6JrIoiA+uVqkbgYlcQnFU/EDwGwSoxxidHHZrGYQBfdg+9bqwgienkCCPa3I9Y8AYRq4raY+ELAHiqQxiTEb6FQBKlUSAZ7QUJ1QaXGEook8rZpInkQJ0SK5SyVkO/n8SL4XsKR2Iggy/Gicf9WBNNxrd1EELgvHgSMjS8OxMliQUD89oDtB3oBqlUE+SSJX4Qw3T/Flnmh+sTGby14KsVd69wI8dMpFEGSGAEkqageeCFCkvGb2haJEaTXfD9PtSLorxWN+9kiyAOCecEHLw6oylhK0+ZjYQ55QcMeI1Uy4oQfe+FRqwhy4McqYQ+2XEfQ6Itfv9SHauKWCIqyUSiCwFKYhCNRqACpBKkIwdtS4VHp2Z6ex5aFllTpGAbXST6SEOEg2fP29BAQkh1h+C4R5OFAfF5kimLxIEJUxfTlrXGtIsg584loceDP4BoCyN4dWxCMQSz294Jq4pYIirLxrggibrwcIXEQQ58Aqa3fq/OkG+ppP8OLoI2LqF5eXmYWz2+nzQ4BKBKezxZB+iHsCJJBnCxXLRYT6/RFwtzc3Mv988DgHm2rwLCXTBaHiaCNz5YAPmxrAtJ5pcpj3nmQ2N5eNXFLBEXZeFcEgSQmAWmnwjBSW6tQSCASkGRCALEhwfIqSA9JR1/6gb2MQCD41AXR45s32vBBYn+XCPLfC4mDvTmqKrYIbL/OYsmbD8QNO9q5blsO+OIhwucn2CJUVvlBKoJgMdhcpPPqfeMTqom71rkR4qdTUQRJTJLCVx2QZ0sC8TaUpOIg4ehHu5HXD1IRBETDBIGD6ogNf4vju0SQ8XnRwf3ZfSLQ9vmLfUtny1+Ln4PKz39Ajq234R7xjR+LI08EiQExw55PmvLm1T6VwRdbDNXEXevcCPHTeSWC/wqWdiSTX+L9DSQzlVP6RvS7qfY+zc4LdcpX3uO//vsI8ZP5FBEUQoifgkRQCFFqJIJCiFIjERRClBqJoBCi1EgEhRClRiIohCgxIfwBkiTLqoOWMN4AAAAASUVORK5CYII=" InformativeScreenshot="ea6d72c91a185850545e23f999520762.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="1290, 645, 343, 43" CvTextArea="1301, 654, 141, 18" CvTextArgument="Mohon masukkan" CvType="InputBox" DesignTimeRectangle="1292, 647, 339, 40" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' ' type='' class='textarea__edit textarea__edit--focus' parentid='app' tag='DIV' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVcAAAAsCAYAAADRo/uuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAActSURBVHhe7Z0HT+NKFEbf//9DtKUuHZaydBBV9A5LFzCrM+Tm3QwOOKy9vBe+I1lR7CnXg+7xZOyEf4IQQojCkVyFEKIEXsl1d3c3DA8Ph7a2ttDS0qJNmzZt2upseBJf4s2UGrkuLCyEgYGBcHBwEB4fHyt7hRBCZIEn8SXexJ+eqlwxLwUkVSGEaAy8iT/9DLYqV6a2GFgIIUTj4E88alTlytqBZq1CCPEx8CceNapyZXFWCCHEx/EelVyFEKIgJFchhCgByVUIIUpAchVCiBL438h1bW0tjI2NhdPT08oe8R57e3thZGQkvtZD4ypEORQi17m5ufDt27cwNDQUHh4eKntfc3R0FLq7u+O2v79f2ZuP6enp0N7envnVMpHN6upq/FvyWg+NqxDlUIhcSVDq8FzX9vZ2Ze9rZmdnY7mPJLMk0DiSqxCfR6FybW1tjR8xs7i5uQk9PT2xjOT6d5Bchfg8CpMrywL9/f2hq6srXF5eVo78y/r6ehQr37nNSmaWDH78+BHXCHnlvccksLOzE9cJR0dHY9mVlZXw9PRUKfUC732ZmZmZcHt7Wzka4tLFz58/40asHKccF4bDw8NKqddwgSC2+fn5mninpqbCxcVFeH5+jjN32snqF9LYrG5KOh6MF+2Dj8PDuil90z5kyZW6k5OTsf6vX78y5Xp+fh7Gx8djbPf393Hfe3H7mNjPccpNTEyEs7OzSikhvg6FynVxcTEKdGlpqXLkBb4KNjg4GMVL8vlkRhhIjnq0QbmOjo74nmUEEwp9sOxAG9T//v17fCVW6hskOceoz0wZ4VvbdmPn7u4u9PX1xX30RZu9vb2xHG3WuwGENKhDGTbqUJd6vCIeYmQ/5YiNWOgPfGz0z7lSnra4aBhcMCxmyvDKe86T8bA4/HeXgTGlLcYKUrnSP+1RxpZvUrkiVsaN8zk+Po778sRtMbExprRhn1Roi3aF+EoUJlcSbXNzMyYUiehvbPEjBhxnxkSi+2Te2tqKicosx37PgLqIw5ejD+Jiv7VN0iMy+ry+vo7iYaZEQiMoA0mQ4IgB0ZlcKbe8vFwVOMKhT9rIwgTS2dlZFQ9wUSE2+rC77rRJzPSxsbER93HRsT4N2jFRUofZJO34XyXjfHlPOdr/iFxpizFOx8bLlfFkXHjvZZ8nbn/h8evu1KFuesEVotkpVK4kKLNNZOkTjH0cR7J8VLayQHIy0zk5OYnvDROyiY4+aNcnPVCfpCa5+YiP+LJ+LtHiQuYmV8TsP7bXk5bxntRSKSNVxGIzR/olRh+bxWLir3cOvm6jckWmWWIF+9sRa5ZYIU/cFhNPjNjFCtKYhPgqFC5XZlYkmd3YYjbEzJKPkiSnL5smqAfpIT8+1jNz8/U8Xq5vJTLCQK4sS9Tr90/lmvZr+02uwHlxgaFv2mJDehYLYvLLJLbe6sXWqFx59I1XBJuuT1OWcWG2TBm/xOJ5L+5Gx0aIZqdwuSIHxEqyMtvhRhbJy2tatp7kID3m63nyytUfq9dv2XLlwsO40AY3fJhFsqTAPh8LY8iNNdZwmdXz96Adu1HVqFzZaMdm7h7KchxRUpd2/ZIH5IlbchWiFu/RQuQKLAmQyCQgM1ZmrsxgwZdlRsrM1NZMPfbx2JI17cPgOElNciMkJJK1ZoqYOC+E81ly5aJDfF5e9WLxIDdm8dTlKYJG5cp7xhMZstGewTHEytooSzH0QSz294I8cUuuQtRSilyRJje1SEgk6xMrLevXQj3pjZC0nuHlav0i66urq0qJl6cVrBxiqSe0suVKPS4YiM4gTj62Wyx2EUhvAPE/eez8uRBxjrZkYtjNQYvD5Gr9szRCG7ZEA+m4Mitl3LlA2dppnrglVyFqKUWugBxoh/3MiIy0rM2oSEwSmyRFrJQhcbNmvB6SmbrUA7uJhHh4pAqZ8swm+2gDYXyWXPmaMHGw9skskKUSWw+1WLLGA2lSjv0ct6UX2uLixGNOlEWAtGVxpHIFi8HGIh1X3zZtQp64Gx0bIZod8sMoVK4kPMnmZ0mQVZbE5O44/bKRyNRjv5FVD1K5AjIy0bAxm+NGjcXxWXKlf25QcX52nojfHrOyZ0FtGcDiZ2Om6r9YQVlfhnOkbdqxOLLkSgxIkvI8Opc1rvZIFm2x1JIn7kbHRohmh1wxPizXouAjLknqP+r+CUiCmV56h/yzyXueVs5fAFL+5jkW/fcRopn5T8lVCCGaBclVCCFKQHIVQogSkFyFEKIEJFchhCgByVUIIUpAchVCiBKQXIUQogQkVyGEKAHJVQghSiBTrnzv3P8egBBCiPzgTzxqVOXKj2/4X7ISQgiRH/zpf8SoKld+ySjr/1AJIYR4G7yJP/0vzVXlCvw4MwUwsCQrhBBvgyfxJd7En54auQLmZWrL2gGLs9q0adOmLXvDk/jSz1iNV3IVQgjx50iuQghROCH8Bj/VW1gaJ/qRAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[rowNumber]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[rowNumber+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKQSURBVFhHvVe7btRAFPUn8AmUaLFXrqnSRYps2IKCjqD0CS0CCYo0dFvRUIAUiZbQJ9oSCYpIaZImpIoEYncHks2LTZjMGd+78Xhv1uPs40hHlmeu55x53JlxUBWqUYt/J2Gzm9b3u2mkDZVhSz2sP6WQ6UEl9dckyoQJGBi8q8a9uxQ+WeTEVScJ36hGfIeqAjMicxCfmgmVCVhxIxxT8RDaSfSR4lpUNBl0k/oWGi6bZ4wKTCIWo0LF4wHDSb3ap6KRwPQg3jybVDQeOun952hQpdEHKhoJMwqVDFuohVqMeZbYMcK2R+Yp1UskA1qqG3DuehEH/MEs2U5riyRvDeRzeSYsGuAcnhnNmnpE8tUNqCcP9N/lx7rXfKUPXzzTf5bmxbhRdNKU89yHp5/e6f+9Q13Exd6uNSR9I7FgIGpJQUWefVmzYv+2vw16jmev+VL3t7/buqPVZfHbIpF5JI9cjz5LQXlCDDjbWBfrQZiRyiU650Xneg+/kRhewLeHZXT2AR8D6B2ANSDVVyVJZ8C+LQUVefnzwJo4fv9WrK9Cks7AB0gZsQ7YxOWvA2vkNiloqEg6g68BJlY9GwH6JiuqpKChe1C1F6JFIaiU2IyQFWwGaYpNSop1mIRbJJ3htgaYED2lPQImpBiXoXtjGtcAkzej8lEoGMD5LAdW44lJUcBjYa6TdAYfA2i0rOFzsx6AshEYul3hZ0MKzPPix65tHHNcNAJBPidGbdXMofti7h53IyF6/nXTigA4/ZB+ePLpiEPKJwuQ9iSdwccAE6mHFY8F19/bsUSvj1ZXxHiJkgHc58XgadC5jjFMxczuhc51jOFzJ5gQzb9jPPzviGnwOZbHYhK2jE7u3zIIrgBemnWcZ/DkwgAAAABJRU5ErkJggg==" InformativeScreenshot="ccfa74ed235520fb2c5c7a276197d8c8.jpg" Selector="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" Title="Shopee Seller Centre" Url="https://seller.shopee.co.id/portal/product/new" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
