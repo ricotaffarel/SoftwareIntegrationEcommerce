@@ -1,0 +1,82 @@
+﻿{
+  "Metadata": {
+    "Id": "8eb2ec7d-06b1-4440-a610-2112aa8333f0",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "NewForm",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "collapsible": false,
+        "hideLabel": true,
+        "key": "panel",
+        "type": "panel",
+        "label": "Panel",
+        "input": false,
+        "tableView": false,
+        "components": [
+          {
+            "label": "HTML",
+            "attrs": [
+              {
+                "attr": "",
+                "value": ""
+              }
+            ],
+            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Introduction !!!</p>\n</div>",
+            "refreshOnChange": false,
+            "key": "html",
+            "type": "htmlelement",
+            "input": false,
+            "tableView": false
+          },
+          {
+            "label": "Silahkan pilih opsi berikut",
+            "optionsLabelPosition": "right",
+            "inline": false,
+            "tableView": false,
+            "values": [
+              {
+                "label": "Login to Shopee",
+                "value": "0",
+                "shortcut": ""
+              },
+              {
+                "label": "Login to Tokopedia",
+                "value": "1",
+                "shortcut": ""
+              },
+              {
+                "label": "Login All",
+                "value": "2",
+                "shortcut": ""
+              },
+              {
+                "label": "Next Step",
+                "value": "3",
+                "shortcut": ""
+              }
+            ],
+            "key": "introduction_last",
+            "type": "radio",
+            "input": true
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

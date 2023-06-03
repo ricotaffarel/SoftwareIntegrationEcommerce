@@ -1,6 +1,11 @@
 ﻿{
   "IdMap": {
-    "8eb2ec7d-06b1-4440-a610-2112aa8333f0": "../../form/IntroductionForm.uiform",
-    "9e863bae-18ec-42df-bc82-31fd9046f595": "../../form/LastForm.uiform"
+    "729ebd29-7d8f-48e2-9c98-dda47b409b64": "../../form/delete-data.uiform",
+    "8dc12f10-24cb-404f-a23d-a5f5c32fb872": "../../form/entry-data.uiform",
+    "491c8f5e-a534-42fd-8160-15d55daf43ac": "../../form/generate-report.uiform",
+    "8eb2ec7d-06b1-4440-a610-2112aa8333f0": "../../form/introduction-form.uiform",
+    "9e863bae-18ec-42df-bc82-31fd9046f595": "../../form/last-form.uiform",
+    "71156d9b-93af-4d49-8b63-f285e406fcb7": "../../form/menus.uiform",
+    "aedda6b4-913d-4c60-96bb-dc13340998fa": "../../form/update-data.uiform"
   }
 }

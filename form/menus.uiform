@@ -1,10 +1,10 @@
 ﻿{
   "Metadata": {
-    "Id": "8eb2ec7d-06b1-4440-a610-2112aa8333f0",
+    "Id": "71156d9b-93af-4d49-8b63-f285e406fcb7",
     "Kind": "FormIo"
   },
   "DesignProperties": {
-    "Title": "NewForm",
+    "Title": "Menu",
     "Theme": "Default",
     "ShowInTaskbar": true,
     "ShowMargin": true,
@@ -14,7 +14,6 @@
     "components": [
       {
         "collapsible": false,
-        "hideLabel": true,
         "key": "panel",
         "type": "panel",
         "label": "Panel",
@@ -29,7 +28,7 @@
                 "value": ""
               }
             ],
-            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Introduction !!!</p>\n</div>",
+            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Manage Data</p>\n</div>",
             "refreshOnChange": false,
             "key": "html",
             "type": "htmlelement",
@@ -37,23 +36,38 @@
             "tableView": false
           },
           {
-            "label": "Silahkan pilih opsi berikut",
+            "label": "Silahkan Pilih Opsi Berikut ini",
             "optionsLabelPosition": "right",
             "inline": false,
             "tableView": false,
             "values": [
               {
-                "label": "Login to Shopee",
+                "label": "Entry Data to E-commerce",
                 "value": "0",
                 "shortcut": ""
               },
               {
-                "label": "Login to Tokopedia",
+                "label": "Update Data to E-commerce",
                 "value": "1",
+                "shortcut": ""
+              },
+              {
+                "label": "Delete Data Product",
+                "value": "2",
+                "shortcut": ""
+              },
+              {
+                "label": "Trigger Update Stock Data Product",
+                "value": "3",
+                "shortcut": ""
+              },
+              {
+                "label": "Generate Report",
+                "value": "4",
                 "shortcut": ""
               }
             ],
-            "key": "introduction_last",
+            "key": "menus",
             "type": "radio",
             "input": true
           }

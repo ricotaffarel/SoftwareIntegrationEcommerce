@@ -1,0 +1,76 @@
+﻿{
+  "Metadata": {
+    "Id": "8dc12f10-24cb-404f-a23d-a5f5c32fb872",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Menu",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "collapsible": false,
+        "key": "panel",
+        "type": "panel",
+        "label": "Panel",
+        "input": false,
+        "tableView": false,
+        "components": [
+          {
+            "label": "HTML",
+            "attrs": [
+              {
+                "attr": "",
+                "value": ""
+              }
+            ],
+            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Entry Data</p>\n</div>",
+            "refreshOnChange": false,
+            "key": "html",
+            "type": "htmlelement",
+            "input": false,
+            "tableView": false
+          },
+          {
+            "label": "Silahkan Pilih Opsi Berikut ini",
+            "optionsLabelPosition": "right",
+            "inline": false,
+            "tableView": false,
+            "values": [
+              {
+                "label": "Entry Data to Shopee",
+                "value": "0",
+                "shortcut": ""
+              },
+              {
+                "label": "Entry Data to Tokopedia",
+                "value": "1",
+                "shortcut": ""
+              },
+              {
+                "label": "Entry Data to All",
+                "value": "2",
+                "shortcut": ""
+              }
+            ],
+            "key": "entry_data",
+            "type": "radio",
+            "input": true
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

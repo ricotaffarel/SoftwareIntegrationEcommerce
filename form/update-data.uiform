@@ -1,0 +1,76 @@
+﻿{
+  "Metadata": {
+    "Id": "aedda6b4-913d-4c60-96bb-dc13340998fa",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Menu",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "collapsible": false,
+        "key": "panel",
+        "type": "panel",
+        "label": "Panel",
+        "input": false,
+        "tableView": false,
+        "components": [
+          {
+            "label": "HTML",
+            "attrs": [
+              {
+                "attr": "",
+                "value": ""
+              }
+            ],
+            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Update Data</p>\n</div>",
+            "refreshOnChange": false,
+            "key": "html",
+            "type": "htmlelement",
+            "input": false,
+            "tableView": false
+          },
+          {
+            "label": "Silahkan Pilih Opsi Berikut ini",
+            "optionsLabelPosition": "right",
+            "inline": false,
+            "tableView": false,
+            "values": [
+              {
+                "label": "Update Data to Shopee",
+                "value": "0",
+                "shortcut": ""
+              },
+              {
+                "label": "Update Data to Tokopedia",
+                "value": "1",
+                "shortcut": ""
+              },
+              {
+                "label": "Update Data to All",
+                "value": "2",
+                "shortcut": ""
+              }
+            ],
+            "key": "update_data",
+            "type": "radio",
+            "input": true
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
