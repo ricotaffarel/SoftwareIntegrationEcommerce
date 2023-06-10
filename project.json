@@ -1,5 +1,5 @@
 {
-  "name": "SoftwareIntegrationEcommerce",
+  "name": "BlankProcess",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -50,7 +50,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "a148c22f-a210-4446-ad10-5e12e156e863",
+      "uniqueId": "a83899c3-9402-4924-a87f-747d25099a75",
       "input": [],
       "output": []
     }

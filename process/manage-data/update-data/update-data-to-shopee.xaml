@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="entry_data_shopee" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,4665.6" sap2010:WorkflowViewState.IdRef="entry_data_shopee_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="entry_data_shopee" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="938.4,4665.6" sap2010:WorkflowViewState.IdRef="entry_data_shopee_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -224,14 +224,14 @@
                               </uix:NClick>
                               <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[cek = &quot;Next&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                                 <ui:InterruptibleDoWhile.Body>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="608.8,1445.6" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,484" sap2010:WorkflowViewState.IdRef="Sequence_91">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NGetText DisplayName="Get Text 'Tambahkan Foto (3/9)'" sap:VirtualizedContainerService.HintSize="546.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="93bc336e-7739-4f1d-aa74-d7d11e88f2bd" TextString="[image]" Version="V3">
+                                    <uix:NGetText DisplayName="Get Text 'Tambahkan Foto (3/9)'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="93bc336e-7739-4f1d-aa74-d7d11e88f2bd" TextString="[image]" Version="V3">
                                       <uix:NGetText.Target>
                                         <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/23468189561" DesignTimeRectangle="887, 430, 91, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Tambahkan Foto (3/9)'" FullSelectorArgument="&lt;webctrl class='shopee-image-manager__upload__content__text' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='shopee-image-manager__upload__content__text' parentid='app' tag='DIV' type='' /&gt;" Guid="86ad5d98-519a-4f36-8d7d-3b7c8110e034" InformativeScreenshot="548d2c6c7edaa3561cc98f7b0b418227.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -242,7 +242,7 @@
                                         </uix:TargetAnchorable>
                                       </uix:NGetText.Target>
                                     </uix:NGetText>
-                                    <Assign sap:VirtualizedContainerService.HintSize="546.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
+                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[nilai]</OutArgument>
                                       </Assign.To>
@@ -250,7 +250,7 @@
                                         <InArgument x:TypeArguments="x:Int32">[Integer.Parse(image.Substring(17).Replace("(", "").Replace(")", "").Replace("/", "").Replace("9",""))]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,1014.4" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                                       <ui:IfElseIf.ConditionBlocks>
                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                           <ui:IfElseIfBlock BlockType="If" Condition="[nilai = 0]">
@@ -312,7 +312,7 @@
                                       </ui:IfElseIf.ConditionBlocks>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -615,10 +615,10 @@
                                     </ui:IfElseIfBlock>
                                     <ui:IfElseIfBlock BlockType="ElseIf" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;2&quot;]">
                                       <ui:IfElseIfBlock.Then>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,900.8" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>

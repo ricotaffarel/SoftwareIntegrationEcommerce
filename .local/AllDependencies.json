@@ -21157,6 +21157,7 @@
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "AllDependencies.json",
         "build/ActiproSoftware.BarCode.Wpf.dll",
         "build/ActiproSoftware.Charts.Wpf.dll",
         "build/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
@@ -21432,6 +21433,7 @@
         "lib/net6.0-windows7.0/zu/UiPath.UIAutomation.Activities.Design.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.Wizards.resources.dll",
         "lib/net6.0/UiPath.UIAutomationNext.Activities.Design.dll",
+        "nuget.cache",
         "uipath.uiautomation.activities.23.4.4.nupkg.sha512",
         "uipath.uiautomation.activities.nuspec"
       ]
@@ -21823,8 +21825,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "SoftwareIntegrationEcommerce",
-      "projectName": "SoftwareIntegrationEcommerce",
+      "projectUniqueName": "BlankProcess",
+      "projectName": "BlankProcess",
       "projectPath": "D:\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local",
       "packagesPath": "C:\\Users\\RICO TAFFAREL ANDI\\.nuget\\packages\\",
       "outputPath": "D:\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local"

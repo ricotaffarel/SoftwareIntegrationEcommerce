@@ -9,20 +9,43 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "credentials.xaml",
+      "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "credentials&Sequence_2"
+        "introduction_last&Sequence_1",
+        "menus&Sequence_1",
+        "entry_data&Flowchart_1",
+        "update_data&Flowchart_1",
+        "delete_data&Flowchart_1",
+        "startDate&Flowchart_1",
+        "endDate&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "process/credentials/credentials-tokopedia.xaml",
+      "Path": "process/manage-data/trigger-update-data.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "credentials&Sequence_2"
+        "variasi&Sequence_254",
+        "variasi&Sequence_266",
+        "variasi&Sequence_283",
+        "variasi&Sequence_310",
+        "variasi&Sequence_342",
+        "variasi&Sequence_379",
+        "notFound&Sequence_1",
+        "variasi&Sequence_104",
+        "variasi&Sequence_103",
+        "variasi&Sequence_102",
+        "variasi&Sequence_101",
+        "variasi&Sequence_100",
+        "number&Sequence_1",
+        "variasi&Sequence_54",
+        "ExtractDataTable&Sequence_1",
+        "dataTable&Sequence_1",
+        "stok&Sequence_1",
+        "validation&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -39,43 +62,19 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "process/logout/logout-shopee.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "process/logout/logout-tokopedia.xaml",
+      "Path": "process/manage-data/update-data/update-data-to-shopee.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "credentials&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Main.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "delete_data&Flowchart_1",
-        "menus&Sequence_1",
-        "update_data&Flowchart_1",
-        "entry_data&Flowchart_1",
-        "introduction_last&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "process/manage-data/main.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
+        "shopeeDataTable&Sequence_1",
         "rowNumber&Sequence_1",
-        "shopee&Sequence_1"
+        "directoryPhoto&Sequence_2",
+        "arrSelect&Sequence_2",
+        "arrAmount&Sequence_2",
+        "arrStock&Sequence_2",
+        "image&Sequence_2",
+        "variable1&Sequence_2",
+        "cek&Sequence_2",
+        "nilai&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -97,15 +96,55 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "process/manage-data/update-data/update-data-to-shopee.xaml",
+      "Path": "process/manage-data/entry-data/entry-data-to-tokopedia.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "nilai&Sequence_2",
-        "cek&Sequence_2",
-        "variable1&Sequence_2",
-        "image&Sequence_2",
-        "shopee&Sequence_1",
+        "tokopediaDatatable&Sequence_1",
+        "directoryPhoto&Sequence_1",
         "rowNumber&Sequence_1",
+        "arrSelect&Sequence_83",
+        "arrAmount&Sequence_83",
+        "arrStock&Sequence_83",
+        "arrWeigth&Sequence_83",
+        "pilihan&Sequence_84"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "process/manage-data/entry-data/all.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "directoryPhoto&Sequence_75",
+        "arrSelect&Sequence_75",
+        "arrAmount&Sequence_75",
+        "arrStock&Sequence_75",
+        "rowNumber&Sequence_1",
+        "directoryPhoto&Sequence_8",
+        "dataTable&Sequence_1",
+        "arrSelect&Sequence_6",
+        "arrAmount&Sequence_6",
+        "arrStock&Sequence_6",
+        "arrWeigth&Sequence_6",
+        "pilihan&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "process/manage-data/update-data/all.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "cek&Sequence_70",
+        "arrSelect&Sequence_71",
+        "arrAmount&Sequence_71",
+        "arrStock&Sequence_71",
+        "arrWeigth&Sequence_71",
+        "pilihan&Sequence_72",
+        "rowNumber&Sequence_1",
+        "dataTable&Sequence_1",
         "directoryPhoto&Sequence_2",
         "arrSelect&Sequence_2",
         "arrAmount&Sequence_2",
@@ -116,17 +155,60 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "process/manage-data/entry-data/entry-data-to-tokopedia.xaml",
+      "Path": "process/manage-data/delete-data/delete-data-shopee.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "arrSelect&Sequence_83",
-        "arrAmount&Sequence_83",
-        "arrStock&Sequence_83",
-        "arrWeigth&Sequence_83",
-        "pilihan&Sequence_84",
-        "rowNumber&Sequence_1",
+        "shopeeDataTable&Sequence_1",
+        "directoryPhoto&Sequence_26",
+        "arrSelect&Sequence_26",
+        "arrAmount&Sequence_26",
+        "arrStock&Sequence_26"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "process/manage-data/delete-data/all.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "directoryPhoto&Sequence_42",
+        "arrSelect&Sequence_42",
+        "arrAmount&Sequence_42",
+        "arrStock&Sequence_42",
+        "dataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "process/manage-data/delete-data/delete-data-to-tokopedia.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "tokopediaDatatable&Sequence_1",
         "directoryPhoto&Sequence_1",
-        "tokopediaDatatable&Sequence_1"
+        "rowNumber&Sequence_1",
+        "ExtractDataTable&Sequence_117",
+        "url&Sequence_117"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "process/manage-data/update-data/update-data-to-tokopedia.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "cek&Sequence_152",
+        "arrSelect&Sequence_153",
+        "arrAmount&Sequence_153",
+        "arrStock&Sequence_153",
+        "arrWeigth&Sequence_153",
+        "pilihan&Sequence_154",
+        "tokopediaDatatable&Sequence_1",
+        "directoryPhoto&Sequence_1",
+        "rowNumber&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
