@@ -1,6 +1,6 @@
 {
-  "name": "BlankProcess",
-  "description": "Blank Process",
+  "name": "SoftwareIntegrationEcommerce",
+  "description": "SoftwareIntegrationEcommerce",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",

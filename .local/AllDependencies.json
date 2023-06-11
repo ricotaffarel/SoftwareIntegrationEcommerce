@@ -21825,8 +21825,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "BlankProcess",
-      "projectName": "BlankProcess",
+      "projectUniqueName": "SoftwareIntegrationEcommerce",
+      "projectName": "SoftwareIntegrationEcommerce",
       "projectPath": "D:\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local",
       "packagesPath": "C:\\Users\\RICO TAFFAREL ANDI\\.nuget\\packages\\",
       "outputPath": "D:\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local"
