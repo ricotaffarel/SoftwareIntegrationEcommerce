@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1431.2,1772</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1431.2,7064.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>trigger_update_data_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -116,21 +116,13 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="trigger_update_data" sap:VirtualizedContainerService.HintSize="1441.6,7000" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="trigger_update_data" sap:VirtualizedContainerService.HintSize="1441.6,5113.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="dataTable" />
       <Variable x:TypeArguments="x:String" Name="stok" />
-      <Variable x:TypeArguments="x:Int32" Name="validation">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="number">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="validation" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="number" />
       <Variable x:TypeArguments="x:String" Name="notFound" />
       <Variable x:TypeArguments="x:String" Name="stok1_tokped" />
       <Variable x:TypeArguments="x:String" Name="stok2_tokped" />
@@ -154,24 +146,24 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dataTable]" DisplayName="Read Range Workbook From Excel" sap:VirtualizedContainerService.HintSize="1379.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Data" WorkbookPath="data\Data Produk.xlsx" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1379.2,6760" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1379.2,4873.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="1345.6,6643.2" sap2010:WorkflowViewState.IdRef="Sequence_1210">
+          <Sequence sap:VirtualizedContainerService.HintSize="1345.6,4756.8" sap2010:WorkflowViewState.IdRef="Sequence_1210">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1283.2,6531.2" sap2010:WorkflowViewState.IdRef="IfElseIf_432">
+            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1283.2,4644.8" sap2010:WorkflowViewState.IdRef="IfElseIf_432">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Status&quot;).ToString = &quot;Update Stok&quot;]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1232.8,6335.2" sap2010:WorkflowViewState.IdRef="Sequence_1209">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1232.8,4448.8" sap2010:WorkflowViewState.IdRef="Sequence_1209">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -189,13 +181,13 @@
                             </Sequence>
                           </ui:CommentOut.Body>
                         </ui:CommentOut>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Seller Dashboard | Tokopedia" sap:VirtualizedContainerService.HintSize="1170.4,5345.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="ecbbe60c-25dc-46f6-adc7-fb518b69a03c" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Seller Dashboard | Tokopedia" sap:VirtualizedContainerService.HintSize="1170.4,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="ecbbe60c-25dc-46f6-adc7-fb518b69a03c" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1136.8,5128.8" sap2010:WorkflowViewState.IdRef="Sequence_943">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1136.8,5048" sap2010:WorkflowViewState.IdRef="Sequence_943">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -285,7 +277,7 @@
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,1192.8" sap2010:WorkflowViewState.IdRef="IfElseIf_265">
+                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_265">
                                                                       <ui:IfElseIf.ConditionBlocks>
                                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                           <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = stok]">
@@ -375,7 +367,7 @@
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_392">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="510.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_392">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
                                                           </Assign.To>
@@ -383,7 +375,7 @@
                                                             <InArgument x:TypeArguments="x:Int32">1</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_69" Values="[{1,2,3,4}]">
+                                                        <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510.4,573.6" sap2010:WorkflowViewState.IdRef="ForEach`1_69" Values="[{1,2,3,4}]">
                                                           <ui:ForEach.Body>
                                                             <ActivityAction x:TypeArguments="x:Int32">
                                                               <ActivityAction.Argument>
@@ -890,7 +882,7 @@
                                                           </ui:ForEach.Body>
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
@@ -3917,12 +3909,12 @@
                           </uix:NApplicationCard.TargetApp>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NApplicationCard>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Seller Centre" sap:VirtualizedContainerService.HintSize="1170.4,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f4b7015b-2e0c-4a27-abac-38091736a024" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Seller Centre" sap:VirtualizedContainerService.HintSize="1170.4,3459.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f4b7015b-2e0c-4a27-abac-38091736a024" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
@@ -4002,7 +3994,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="961.6,1532" sap2010:WorkflowViewState.IdRef="IfElseIf_419">
+                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="961.6,3811.2" sap2010:WorkflowViewState.IdRef="IfElseIf_419">
                                               <ui:IfElseIf.ConditionBlocks>
                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;1&quot;]">
@@ -4035,14 +4027,14 @@
                                                               </ui:IfElseIfBlock>
                                                               <ui:IfElseIfBlock BlockType="Else">
                                                                 <ui:IfElseIfBlock.Then>
-                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_950">
+                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="608.8,1397.6" sap2010:WorkflowViewState.IdRef="Sequence_950">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_329">
+                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_329">
                                                                       <ui:IfElseIf.ConditionBlocks>
                                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                           <ui:IfElseIfBlock BlockType="If" Condition="[stok = &quot;Habis&quot;]">
@@ -4073,7 +4065,7 @@
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
                                                                     </ui:IfElseIf>
-                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_330">
+                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,1192.8" sap2010:WorkflowViewState.IdRef="IfElseIf_330">
                                                                       <ui:IfElseIf.ConditionBlocks>
                                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                           <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = stok]">
@@ -4134,7 +4126,7 @@
                                                                       </ui:IfElseIf.ConditionBlocks>
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
@@ -4203,12 +4195,12 @@
                                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <uix:NGetText DisplayName="Get Text '30'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_143" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[stok]" Version="V3">
+                                                                            <uix:NGetText DisplayName="Get Text '30'" sap:VirtualizedContainerService.HintSize="659.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_143" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[stok]" Version="V3">
                                                                               <uix:NGetText.Target>
                                                                                 <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Poster%20Rose%20BP%20PNG%2FJPG%2FSVG" CvType="AnyWordGroup" DesignTimeRectangle="1239, 560, 20, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'30'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl class='stock-text' tableRow='1' idx='{0}' tag='SPAN' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl class='stock-text' type='' tag='SPAN' /&gt;" Guid="7aab1311-abc2-45e0-8967-523d8af37534" ImageBase64="" InformativeScreenshot="42e3915d8dedb73fc16c226f9c493eea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                               </uix:NGetText.Target>
                                                                             </uix:NGetText>
-                                                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_334">
+                                                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,594.4" sap2010:WorkflowViewState.IdRef="IfElseIf_334">
                                                                               <ui:IfElseIf.ConditionBlocks>
                                                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = &quot;0&quot;]">
@@ -4331,7 +4323,7 @@
                                                                               </ui:IfElseIf.ConditionBlocks>
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                 </scg:Dictionary>
                                                                               </sap:WorkflowViewStateService.ViewState>
@@ -4348,7 +4340,7 @@
                                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <uix:NGetText DisplayName="Get Text '30'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_144" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[stok]" Version="V3">
+                                                                            <uix:NGetText DisplayName="Get Text '30'" sap:VirtualizedContainerService.HintSize="659.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_144" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[stok]" Version="V3">
                                                                               <uix:NGetText.Target>
                                                                                 <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Poster%20Rose%20BP%20PNG%2FJPG%2FSVG" CvType="AnyWordGroup" DesignTimeRectangle="1239, 610, 20, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'30'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl class='stock-text' tableRow='1' idx='{0}' tag='SPAN' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl class='stock-text' type='' tag='SPAN' /&gt;" Guid="7aab1311-abc2-45e0-8967-523d8af37534" ImageBase64="" InformativeScreenshot="0a09f9e74031cf1678f8e5d283da99dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                               </uix:NGetText.Target>
@@ -4359,7 +4351,7 @@
                                                                                 </scg:Dictionary>
                                                                               </sap:WorkflowViewStateService.ViewState>
                                                                             </uix:NGetText>
-                                                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_337">
+                                                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,420" sap2010:WorkflowViewState.IdRef="IfElseIf_337">
                                                                               <ui:IfElseIf.ConditionBlocks>
                                                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 2&quot;).ToString = &quot;0&quot;]">
@@ -4375,10 +4367,11 @@
                                                                                   </ui:IfElseIfBlock>
                                                                                   <ui:IfElseIfBlock BlockType="Else">
                                                                                     <ui:IfElseIfBlock.Then>
-                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_964">
+                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_964">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                                         <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_335">
@@ -4482,7 +4475,7 @@
                                                                               </ui:IfElseIf.ConditionBlocks>
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                 </scg:Dictionary>
                                                                               </sap:WorkflowViewStateService.ViewState>
@@ -4820,7 +4813,7 @@
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_482">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="510.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_482">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
                                                           </Assign.To>
@@ -4828,13 +4821,13 @@
                                                             <InArgument x:TypeArguments="x:Int32">1</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_76" Values="[{1,2}]">
+                                                        <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510.4,649.6" sap2010:WorkflowViewState.IdRef="ForEach`1_76" Values="[{1,2}]">
                                                           <ui:ForEach.Body>
                                                             <ActivityAction x:TypeArguments="x:Int32">
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,583.2" sap2010:WorkflowViewState.IdRef="Sequence_755">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,461.6" sap2010:WorkflowViewState.IdRef="Sequence_755">
                                                                 <Sequence.Variables>
                                                                   <Variable x:TypeArguments="x:String" Name="variasi" />
                                                                 </Sequence.Variables>
@@ -4843,9 +4836,9 @@
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_177" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
+                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_182" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
                                                                   <uix:NGetText.Target>
-                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 668, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, validation)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="cb157ed99daebceb5fca779e3d05e3e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 773, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="55d6341b199d49dda41299aee979e4c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                   </uix:NGetText.Target>
                                                                 </uix:NGetText>
                                                                 <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_351">
@@ -4881,10 +4874,11 @@
                                                                                   </ui:IfElseIfBlock>
                                                                                   <ui:IfElseIfBlock BlockType="Else">
                                                                                     <ui:IfElseIfBlock.Then>
-                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_986">
+                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_986">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                                         <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_345">
@@ -4946,7 +4940,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - (Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -5005,12 +4999,12 @@
                                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <uix:NGetText DisplayName="Get Text '30'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_149" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[stok]" Version="V3">
+                                                                            <uix:NGetText DisplayName="Get Text '30'" sap:VirtualizedContainerService.HintSize="659.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_149" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[stok]" Version="V3">
                                                                               <uix:NGetText.Target>
                                                                                 <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Poster%20Rose%20BP%20PNG%2FJPG%2FSVG" CvType="AnyWordGroup" DesignTimeRectangle="1239, 560, 20, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'30'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl class='stock-text' tableRow='1' idx='{0}' tag='SPAN' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl class='stock-text' type='' tag='SPAN' /&gt;" Guid="7aab1311-abc2-45e0-8967-523d8af37534" ImageBase64="" InformativeScreenshot="42e3915d8dedb73fc16c226f9c493eea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                               </uix:NGetText.Target>
                                                                             </uix:NGetText>
-                                                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_350">
+                                                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="659.2,594.4" sap2010:WorkflowViewState.IdRef="IfElseIf_350">
                                                                               <ui:IfElseIf.ConditionBlocks>
                                                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 2&quot;).ToString = &quot;0&quot;]">
@@ -5091,7 +5085,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok2_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - (Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -5133,7 +5127,7 @@
                                                                               </ui:IfElseIf.ConditionBlocks>
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                 </scg:Dictionary>
                                                                               </sap:WorkflowViewStateService.ViewState>
@@ -5150,14 +5144,6 @@
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:IfElseIf>
-                                                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_489">
-                                                                  <Assign.To>
-                                                                    <OutArgument x:TypeArguments="x:Int32">[validation]</OutArgument>
-                                                                  </Assign.To>
-                                                                  <Assign.Value>
-                                                                    <InArgument x:TypeArguments="x:Int32">[validation+1]</InArgument>
-                                                                  </Assign.Value>
-                                                                </Assign>
                                                                 <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_490">
                                                                   <Assign.To>
                                                                     <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
@@ -5171,7 +5157,7 @@
                                                           </ui:ForEach.Body>
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
@@ -5202,7 +5188,7 @@
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,583.2" sap2010:WorkflowViewState.IdRef="Sequence_756">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,461.6" sap2010:WorkflowViewState.IdRef="Sequence_756">
                                                                 <Sequence.Variables>
                                                                   <Variable x:TypeArguments="x:String" Name="variasi" />
                                                                 </Sequence.Variables>
@@ -5211,9 +5197,9 @@
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_178" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
+                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_183" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
                                                                   <uix:NGetText.Target>
-                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 668, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, validation)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="cb157ed99daebceb5fca779e3d05e3e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 773, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="55d6341b199d49dda41299aee979e4c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                   </uix:NGetText.Target>
                                                                 </uix:NGetText>
                                                                 <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_361">
@@ -5314,7 +5300,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - (Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -5460,7 +5446,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok2_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - (Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -5540,10 +5526,10 @@
                                                                                   </ui:IfElseIfBlock>
                                                                                   <ui:IfElseIfBlock BlockType="Else">
                                                                                     <ui:IfElseIfBlock.Then>
-                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_1015">
+                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_1015">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
@@ -5606,7 +5592,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok3_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - (Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -5665,14 +5651,6 @@
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:IfElseIf>
-                                                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_501">
-                                                                  <Assign.To>
-                                                                    <OutArgument x:TypeArguments="x:Int32">[validation]</OutArgument>
-                                                                  </Assign.To>
-                                                                  <Assign.Value>
-                                                                    <InArgument x:TypeArguments="x:Int32">[validation+1]</InArgument>
-                                                                  </Assign.Value>
-                                                                </Assign>
                                                                 <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_502">
                                                                   <Assign.To>
                                                                     <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
@@ -5717,7 +5695,7 @@
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,583.2" sap2010:WorkflowViewState.IdRef="Sequence_757">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,461.6" sap2010:WorkflowViewState.IdRef="Sequence_757">
                                                                 <Sequence.Variables>
                                                                   <Variable x:TypeArguments="x:String" Name="variasi" />
                                                                 </Sequence.Variables>
@@ -5726,9 +5704,9 @@
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_179" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
+                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_184" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
                                                                   <uix:NGetText.Target>
-                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 668, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, validation)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="cb157ed99daebceb5fca779e3d05e3e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 773, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="55d6341b199d49dda41299aee979e4c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                   </uix:NGetText.Target>
                                                                 </uix:NGetText>
                                                                 <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_377">
@@ -5829,7 +5807,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - (Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -5974,7 +5952,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok2_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - (Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -6119,7 +6097,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok3_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - (Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -6264,7 +6242,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok4_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 4").ToString) - (Integer.Parse(row("Stok 4").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 4").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -6409,7 +6387,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:Object">[stok5_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:Object">[Integer.Parse(row("Stok 5").ToString) - (Integer.Parse(row("Stok 5").ToString) - Integer.Parse(stok))]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:Object">[(Integer.Parse(row("Stok 5").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -6468,14 +6446,6 @@
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:IfElseIf>
-                                                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_519">
-                                                                  <Assign.To>
-                                                                    <OutArgument x:TypeArguments="x:Int32">[validation]</OutArgument>
-                                                                  </Assign.To>
-                                                                  <Assign.Value>
-                                                                    <InArgument x:TypeArguments="x:Int32">[validation+1]</InArgument>
-                                                                  </Assign.Value>
-                                                                </Assign>
                                                                 <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_520">
                                                                   <Assign.To>
                                                                     <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
@@ -6520,7 +6490,7 @@
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,583.2" sap2010:WorkflowViewState.IdRef="Sequence_758">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,461.6" sap2010:WorkflowViewState.IdRef="Sequence_758">
                                                                 <Sequence.Variables>
                                                                   <Variable x:TypeArguments="x:String" Name="variasi" />
                                                                 </Sequence.Variables>
@@ -6529,9 +6499,9 @@
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_180" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
+                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_185" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
                                                                   <uix:NGetText.Target>
-                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 668, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, validation)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="cb157ed99daebceb5fca779e3d05e3e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 773, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="55d6341b199d49dda41299aee979e4c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                   </uix:NGetText.Target>
                                                                 </uix:NGetText>
                                                                 <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_396">
@@ -6567,10 +6537,11 @@
                                                                                   </ui:IfElseIfBlock>
                                                                                   <ui:IfElseIfBlock BlockType="Else">
                                                                                     <ui:IfElseIfBlock.Then>
-                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_1059">
+                                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_1059">
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                                         <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_378">
@@ -6632,7 +6603,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - (Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -6777,7 +6748,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok3_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - (Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -6922,7 +6893,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok3_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - (Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -7067,7 +7038,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok4_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 4").ToString) - (Integer.Parse(row("Stok 4").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 4").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -7212,7 +7183,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:Object">[stok5_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:Object">[Integer.Parse(row("Stok 5").ToString) - (Integer.Parse(row("Stok 5").ToString) - Integer.Parse(stok))]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:Object">[(Integer.Parse(row("Stok 5").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -7357,7 +7328,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:Object">[stok6_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:Object">[Integer.Parse(row("Stok 6").ToString) - (Integer.Parse(row("Stok 6").ToString) - Integer.Parse(stok))]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:Object">[(Integer.Parse(row("Stok 6").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -7416,14 +7387,6 @@
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:IfElseIf>
-                                                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_540">
-                                                                  <Assign.To>
-                                                                    <OutArgument x:TypeArguments="x:Int32">[validation]</OutArgument>
-                                                                  </Assign.To>
-                                                                  <Assign.Value>
-                                                                    <InArgument x:TypeArguments="x:Int32">[validation+1]</InArgument>
-                                                                  </Assign.Value>
-                                                                </Assign>
                                                                 <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_541">
                                                                   <Assign.To>
                                                                     <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
@@ -7447,14 +7410,14 @@
                                                   </ui:IfElseIfBlock>
                                                   <ui:IfElseIfBlock BlockType="ElseIf" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;7&quot;]">
                                                     <ui:IfElseIfBlock.Then>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_1146">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="911.2,2362.4" sap2010:WorkflowViewState.IdRef="Sequence_1146">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_542">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="848.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_542">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
                                                           </Assign.To>
@@ -7462,13 +7425,13 @@
                                                             <InArgument x:TypeArguments="x:Int32">1</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_80" Values="[{1,2,3,4,5,6,7}]">
+                                                        <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="848.8,2128.8" sap2010:WorkflowViewState.IdRef="ForEach`1_80" Values="[{1,2,3,4,5,6,7}]">
                                                           <ui:ForEach.Body>
                                                             <ActivityAction x:TypeArguments="x:Int32">
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="815.2,2062.4" sap2010:WorkflowViewState.IdRef="Sequence_759">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="815.2,1940.8" sap2010:WorkflowViewState.IdRef="Sequence_759">
                                                                 <Sequence.Variables>
                                                                   <Variable x:TypeArguments="x:String" Name="variasi" />
                                                                 </Sequence.Variables>
@@ -7477,9 +7440,9 @@
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="772,157.6" sap2010:WorkflowViewState.IdRef="NGetText_181" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
+                                                                <uix:NGetText DisplayName="Get Text 'bp-3'" sap:VirtualizedContainerService.HintSize="772,157.6" sap2010:WorkflowViewState.IdRef="NGetText_186" ScopeIdentifier="f4b7015b-2e0c-4a27-abac-38091736a024" TextString="[variasi]" Version="V3">
                                                                   <uix:NGetText.Target>
-                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 668, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, validation)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="cb157ed99daebceb5fca779e3d05e3e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                                    <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=Jual%20Poster%20Blackpink%20all%20Member%20Karakter%20All%2A%20in%20one%20Full%20Print%20A4" DesignTimeRectangle="883, 773, 120, 20" DesignTimeScaleFactor="1.25" FriendlyName="'bp-3'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='{0}' /&gt;&quot;, number)]" FuzzySelectorArgument="&lt;webctrl class='shopee-table__body' tag='TABLE' /&gt;&lt;webctrl aaname='' tag='DIV' class='product-list-item__td product-variation__name' parentclass='product-variation-item' type='' /&gt;" Guid="85e36d1b-fd56-4ecb-a594-0ad7d399e1c4" ImageBase64="" InformativeScreenshot="55d6341b199d49dda41299aee979e4c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                                   </uix:NGetText.Target>
                                                                 </uix:NGetText>
                                                                 <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="772,1532" sap2010:WorkflowViewState.IdRef="IfElseIf_418">
@@ -7580,7 +7543,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - (Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 1").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -7725,7 +7688,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok2_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - (Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 2").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -7870,7 +7833,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok3_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - (Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 3").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -8015,7 +7978,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:String">[stok4_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 4").ToString) - (Integer.Parse(row("Stok 4").ToString) - Integer.Parse(stok))).ToString]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:String">[(Integer.Parse(row("Stok 4").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -8160,7 +8123,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:Object">[stok5_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:Object">[Integer.Parse(row("Stok 5").ToString) - (Integer.Parse(row("Stok 5").ToString) - Integer.Parse(stok))]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:Object">[(Integer.Parse(row("Stok 5").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -8305,7 +8268,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:Object">[stok6_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:Object">[Integer.Parse(row("Stok 6").ToString) - (Integer.Parse(row("Stok 6").ToString) - Integer.Parse(stok))]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:Object">[(Integer.Parse(row("Stok 6").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -8450,7 +8413,7 @@
                                                                                                         <OutArgument x:TypeArguments="x:Object">[stok7_shopee]</OutArgument>
                                                                                                       </Assign.To>
                                                                                                       <Assign.Value>
-                                                                                                        <InArgument x:TypeArguments="x:Object">[Integer.Parse(row("Stok 7").ToString) - (Integer.Parse(row("Stok 7").ToString) - Integer.Parse(stok))]</InArgument>
+                                                                                                        <InArgument x:TypeArguments="x:Object">[(Integer.Parse(row("Stok 7").ToString) - Integer.Parse(stok)).ToString]</InArgument>
                                                                                                       </Assign.Value>
                                                                                                     </Assign>
                                                                                                   </Sequence>
@@ -8509,14 +8472,6 @@
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:IfElseIf>
-                                                                <Assign sap:VirtualizedContainerService.HintSize="772,81.6" sap2010:WorkflowViewState.IdRef="Assign_564">
-                                                                  <Assign.To>
-                                                                    <OutArgument x:TypeArguments="x:Int32">[validation]</OutArgument>
-                                                                  </Assign.To>
-                                                                  <Assign.Value>
-                                                                    <InArgument x:TypeArguments="x:Int32">[validation+1]</InArgument>
-                                                                  </Assign.Value>
-                                                                </Assign>
                                                                 <Assign sap:VirtualizedContainerService.HintSize="772,81.6" sap2010:WorkflowViewState.IdRef="Assign_565">
                                                                   <Assign.To>
                                                                     <OutArgument x:TypeArguments="x:Int32">[number]</OutArgument>
@@ -8530,7 +8485,7 @@
                                                           </ui:ForEach.Body>
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
@@ -8567,7 +8522,7 @@
                           </uix:NApplicationCard.TargetApp>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -8718,7 +8673,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:WriteRange>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,336" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1170.4,336" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_1149">
                               <sap:WorkflowViewStateService.ViewState>
