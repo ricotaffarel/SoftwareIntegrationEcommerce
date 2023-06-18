@@ -113,9 +113,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID24</x:Reference>
+        <x:Reference>__ReferenceID23</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID24">
+      <FlowStep x:Name="__ReferenceID23">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">90,11.599999999999994</av:Point>
@@ -279,7 +279,7 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:InvokeWorkflowFile>
                               </FlowStep>
-                              <FlowStep x:Key="2" x:Name="__ReferenceID20">
+                              <FlowStep x:Key="2" x:Name="__ReferenceID19">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <av:Point x:Key="ShapeLocation">1690,791.6</av:Point>
@@ -312,7 +312,7 @@
                           <av:PointCollection x:Key="1Connector">1330,453.59999999999997 1330,483.59999999999997 1420,483.59999999999997 1420,558</av:PointCollection>
                           <av:PointCollection x:Key="2Connector">1330,453.59999999999997 1330,483.59999999999997 870,483.59999999999997 870,568</av:PointCollection>
                           <av:PointCollection x:Key="3Connector">1330,453.59999999999997 1330,483.59999999999997 570,483.59999999999997 570,566.4</av:PointCollection>
-                          <av:PointCollection x:Key="4Connector">1330,453.59999999999997 1330,483.59999999999997 120,483.59999999999997 120,568</av:PointCollection>
+                          <av:PointCollection x:Key="4Connector">1330,453.59999999999997 1330,483.59999999999997 160,483.59999999999997 160,568.4</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <FlowStep x:Key="1" x:Name="__ReferenceID10">
@@ -381,7 +381,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:InvokeWorkflowFile>
                             </FlowStep>
-                            <FlowStep x:Key="2" x:Name="__ReferenceID21">
+                            <FlowStep x:Key="2" x:Name="__ReferenceID20">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">1010,821.6</av:Point>
@@ -469,7 +469,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:InvokeWorkflowFile>
                             </FlowStep>
-                            <FlowStep x:Key="2" x:Name="__ReferenceID22">
+                            <FlowStep x:Key="2" x:Name="__ReferenceID21">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">320,818</av:Point>
@@ -518,52 +518,30 @@
                           </ui:InvokeWorkflowFile>
                         </Sequence>
                       </FlowStep>
-                      <FlowStep x:Key="4" x:Name="__ReferenceID19">
+                      <FlowStep x:Key="4" x:Name="__ReferenceID22">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">20,568</av:Point>
-                            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-                            <av:PointCollection x:Key="ConnectorLocation">120,620.8 120,658.4</av:PointCollection>
+                            <av:Point x:Key="ShapeLocation">60,568.4</av:Point>
+                            <av:Size x:Key="ShapeSize">200,83.2</av:Size>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" sap2010:Annotation.AnnotationText="show form generate report" DisplayName="Generatae Report (ShowFormActivity) (ShowFormActivity)" FormId="491c8f5e-a534-42fd-8160-15d55daf43ac" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="ShowFormActivity_16" IsAsync="False">
-                          <ufa:ShowFormActivity.Arguments>
-                            <InOutArgument x:TypeArguments="s:DateTime" x:Key="startDate">[startDate]</InOutArgument>
-                            <InOutArgument x:TypeArguments="s:DateTime" x:Key="endDate">[endDate]</InOutArgument>
-                          </ufa:ShowFormActivity.Arguments>
+                        <Sequence DisplayName="Generate report" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </ufa:ShowFormActivity>
-                        <FlowStep.Next>
-                          <FlowStep x:Name="__ReferenceID23">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">20,658.4</av:Point>
-                                <av:Size x:Key="ShapeSize">200,83.2</av:Size>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap:VirtualizedContainerService.HintSize="449.6,379.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="generate-report.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="process\manage-data\generate-report.xaml">
-                                <ui:InvokeWorkflowFile.Arguments>
-                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                </ui:InvokeWorkflowFile.Arguments>
-                              </ui:InvokeWorkflowFile>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="generate-report2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="process\manage-data\generate-report2.xaml">
-                                <ui:InvokeWorkflowFile.Arguments>
-                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                </ui:InvokeWorkflowFile.Arguments>
-                              </ui:InvokeWorkflowFile>
-                            </Sequence>
-                          </FlowStep>
-                        </FlowStep.Next>
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="generate-report.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="process\manage-data\generate-report.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="generate-report2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="process\manage-data\generate-report2.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
                       </FlowStep>
                     </FlowSwitch>
                   </FlowStep.Next>
@@ -637,7 +615,6 @@
       <x:Reference>__ReferenceID20</x:Reference>
       <x:Reference>__ReferenceID21</x:Reference>
       <x:Reference>__ReferenceID22</x:Reference>
-      <x:Reference>__ReferenceID23</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>

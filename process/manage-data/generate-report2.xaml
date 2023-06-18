@@ -468,7 +468,7 @@
                                 <OutArgument x:TypeArguments="x:String">[berat]</OutArgument>
                               </ui:AssignOperation.To>
                               <ui:AssignOperation.Value>
-                                <InArgument x:TypeArguments="x:String">1</InArgument>
+                                <InArgument x:TypeArguments="x:String">1 gr</InArgument>
                               </ui:AssignOperation.Value>
                             </ui:AssignOperation>
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">

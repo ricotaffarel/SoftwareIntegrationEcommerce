@@ -28,7 +28,7 @@
                 "value": ""
               }
             ],
-            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Fill in lots of data</p>\n</div>",
+            "content": "<div class=\"alert alert-success\" role=\"alert\">\n  <p class=\"text text-black fw-semibold fs-2\">Fill in lots of data</p>\n  <p class=\"text text-black fw-semibold fs-2\">Pilih jumlah data tokopedia yang akan di generate</p>\n  <p class=\"text text-black fw-semibold fs-2\">Jumlah data ditambah 5, N = Banyak data</p>\n  <p class=\"text text-black fw-semibold fs-2\">N + 5 = ...., 50 + 5 = 55</p>\n</div>",
             "refreshOnChange": false,
             "key": "html",
             "type": "htmlelement",
