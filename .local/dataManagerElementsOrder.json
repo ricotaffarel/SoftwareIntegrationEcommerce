@@ -245,8 +245,8 @@
       "Path": "process/manage-data/generate-report.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "fileShopee&Sequence_1",
-        "fileShopee&Sequence_2"
+        "folderDestinaton&Sequence_2",
+        "fileShopee&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
