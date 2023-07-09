@@ -21821,15 +21821,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RICO TAFFAREL ANDI\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "SoftwareIntegrationEcommerce",
       "projectName": "SoftwareIntegrationEcommerce",
-      "projectPath": "D:\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local",
-      "packagesPath": "C:\\Users\\RICO TAFFAREL ANDI\\.nuget\\packages\\",
-      "outputPath": "D:\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local"
+      "projectPath": "C:\\Users\\DELL\\Documents\\DATA 2\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\DATA 2\\PROJECT\\RPA\\SoftwareIntegrationEcommerce\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21865,7 +21865,7 @@
             "version": "[23.4.4, 23.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\RICO TAFFAREL ANDI\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\DELL\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

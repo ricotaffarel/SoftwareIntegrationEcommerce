@@ -1,5 +1,6 @@
 {
   "name": "SoftwareIntegrationEcommerce",
+  "projectId": "09071b28-c97b-4dcd-aadb-357a484e455d",
   "description": "SoftwareIntegrationEcommerce",
   "main": "Main.xaml",
   "dependencies": {
