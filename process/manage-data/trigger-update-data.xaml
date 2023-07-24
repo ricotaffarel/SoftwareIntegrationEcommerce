@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1131.3333333333333,22298</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1320.6666666666667,29584.000000000004</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>trigger_update_data_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -116,21 +116,13 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="trigger_update_data" sap:VirtualizedContainerService.HintSize="1330.6666666666667,18839.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="trigger_update_data" sap:VirtualizedContainerService.HintSize="1330.6666666666667,29519.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="dataTable" />
       <Variable x:TypeArguments="x:String" Name="stok" />
-      <Variable x:TypeArguments="x:Int32" Name="validation">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="number">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="validation" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="number" />
       <Variable x:TypeArguments="x:String" Name="notFound" />
       <Variable x:TypeArguments="x:String" Name="stok1_tokped" />
       <Variable x:TypeArguments="x:String" Name="stok2_tokped" />
@@ -154,26 +146,26 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dataTable]" DisplayName="Read Range Workbook From Excel" sap:VirtualizedContainerService.HintSize="1268.6666666666667,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Data" WorkbookPath="data\Data Produk.xlsx" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1268.6666666666667,18600.666666666668" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1268.6666666666667,29280.666666666668" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1234.6666666666667,26731.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1673">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1234.6666666666667,29161.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1673">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Seller Dashboard | Tokopedia" sap:VirtualizedContainerService.HintSize="1172.6666666666667,5515.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="ecbbe60c-25dc-46f6-adc7-fb518b69a03c" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Seller Dashboard | Tokopedia" sap:VirtualizedContainerService.HintSize="1172.6666666666667,5516.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="ecbbe60c-25dc-46f6-adc7-fb518b69a03c" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1138.6666666666667,5296.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1407">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1138.6666666666667,5298" sap2010:WorkflowViewState.IdRef="Sequence_1407">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -194,7 +186,7 @@
                         <uix:TargetAnchorable BrowserURL="https://seller.tokopedia.com/manage-product?keyword=ansansma" CvType="AnyWordGroup" DesignTimeRectangle="818, 915, 569, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Oops, produk'" FullSelectorArgument="&lt;webctrl tag='H5' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='css-16f7itu-unf-heading e1qvo2ff5' /&gt;" Guid="923f17d4-7e46-4d24-bc6f-7abe743350c0" ImageBase64="" InformativeScreenshot="c71991efb050e3fcaf9aa6f64a18b21c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pengaturan Produk | Tokopedia' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1076.6666666666667,4523.333333333333" sap2010:WorkflowViewState.IdRef="IfElseIf_496">
+                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1076.6666666666667,4524.666666666667" sap2010:WorkflowViewState.IdRef="IfElseIf_496">
                       <ui:IfElseIf.ConditionBlocks>
                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                           <ui:IfElseIfBlock BlockType="If" Condition="[notFound = &quot;Oops, produk yang kamu cari tidak ditemukan&quot;]">
@@ -212,27 +204,27 @@
                           </ui:IfElseIfBlock>
                           <ui:IfElseIfBlock BlockType="Else">
                             <ui:IfElseIfBlock.Then>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1025.3333333333333,4203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1406">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="836,4204.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1406">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lihat varian produk'" sap:VirtualizedContainerService.HintSize="963.3333333333334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecbbe60c-25dc-46f6-adc7-fb518b69a03c" Version="V3">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lihat varian produk'" sap:VirtualizedContainerService.HintSize="774,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecbbe60c-25dc-46f6-adc7-fb518b69a03c" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="https://seller.tokopedia.com/manage-product" DesignTimeRectangle="428, 691, 1251, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Lihat varian produk'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h5' tag='H5' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H5' class='css-1ebu8wq-unf-heading e1qvo2ff5' aaname='Lihat varian produk' check:innerText='Lihat varian produk' /&gt;" Guid="6bf12024-3a71-4636-a94c-092f63a533f1" ImageBase64="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" InformativeScreenshot="490ff24dfe9ce2d68d8e6824496da841.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pengaturan Produk | Tokopedia' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="963.3333333333334,3894" sap2010:WorkflowViewState.IdRef="IfElseIf_495">
+                                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="774,3895.3333333333335" sap2010:WorkflowViewState.IdRef="IfElseIf_495">
                                   <ui:IfElseIf.ConditionBlocks>
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                       <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;1&quot;]">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1237">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="722.6666666666666,2423.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1237">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
@@ -242,41 +234,57 @@
                                               </uix:NGetText.Target>
                                             </uix:NGetText>
                                             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="660.6666666666666,76" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;stok tokped : &quot; + stok.ToString]" />
-                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="660.6666666666666,1657.3333333333333" sap2010:WorkflowViewState.IdRef="IfElseIf_434">
+                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="660.6666666666666,1998" sap2010:WorkflowViewState.IdRef="IfElseIf_434">
                                               <ui:IfElseIf.ConditionBlocks>
                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = stok]">
                                                     <ui:IfElseIfBlock.Then>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,104" sap2010:WorkflowViewState.IdRef="Sequence_1232">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,195.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1232">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_879">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[stok1_tokped]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[("0").ToString]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
                                                       </Sequence>
                                                     </ui:IfElseIfBlock.Then>
                                                   </ui:IfElseIfBlock>
                                                   <ui:IfElseIfBlock BlockType="Else">
                                                     <ui:IfElseIfBlock.Then>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.3333333333334,1316.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1236">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.3333333333334,1566" sap2010:WorkflowViewState.IdRef="Sequence_1236">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547.3333333333334,1206" sap2010:WorkflowViewState.IdRef="IfElseIf_433">
+                                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547.3333333333334,1455.3333333333333" sap2010:WorkflowViewState.IdRef="IfElseIf_433">
                                                           <ui:IfElseIf.ConditionBlocks>
                                                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                               <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = stok]">
                                                                 <ui:IfElseIfBlock.Then>
-                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_1233">
+                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,326.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1233">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,91.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_147" Text="stok tidak berubah" />
+                                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,91.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_147" Text="stok tidak berubah" />
+                                                                    <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_876">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[stok1_tokped]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[("0").ToString]</InArgument>
+                                                                      </Assign.Value>
+                                                                    </Assign>
                                                                   </Sequence>
                                                                 </ui:IfElseIfBlock.Then>
                                                               </ui:IfElseIfBlock>
@@ -302,7 +310,7 @@
                                                               </ui:IfElseIfBlock>
                                                               <ui:IfElseIfBlock BlockType="ElseIf" Condition="[stok = &quot;0&quot;]">
                                                                 <ui:IfElseIfBlock.Then>
-                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1235">
+                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,476" sap2010:WorkflowViewState.IdRef="Sequence_1235">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -311,10 +319,18 @@
                                                                     </sap:WorkflowViewStateService.ViewState>
                                                                     <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_592">
                                                                       <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[stok1_tokped]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[row("Stok 1").ToString]</InArgument>
+                                                                      </Assign.Value>
+                                                                    </Assign>
+                                                                    <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_875">
+                                                                      <Assign.To>
                                                                         <OutArgument x:TypeArguments="x:Object">[row("Stok 1")]</OutArgument>
                                                                       </Assign.To>
                                                                       <Assign.Value>
-                                                                        <InArgument x:TypeArguments="x:Object">["0"]</InArgument>
+                                                                        <InArgument x:TypeArguments="x:Object">[("0").ToString]</InArgument>
                                                                       </Assign.Value>
                                                                     </Assign>
                                                                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_203" SheetName="Data" WorkbookPath="data\Data Produk.xlsx" />
@@ -1182,10 +1198,10 @@
                                       </ui:IfElseIfBlock>
                                       <ui:IfElseIfBlock BlockType="ElseIf" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;3&quot;]">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="912,2422" sap2010:WorkflowViewState.IdRef="Sequence_1294">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1294">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
@@ -3903,13 +3919,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Seller Centre" sap:VirtualizedContainerService.HintSize="1172.6666666666667,10054" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" ScopeGuid="f4b7015b-2e0c-4a27-abac-38091736a024" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Seller Centre" sap:VirtualizedContainerService.HintSize="1172.6666666666667,12487.333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" ScopeGuid="f4b7015b-2e0c-4a27-abac-38091736a024" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1138.6666666666667,9835.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1612">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1138.6666666666667,12268.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1612">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3947,7 +3963,7 @@
                         <uix:TargetAnchorable BrowserURL="https://seller.shopee.co.id/portal/product/list/all?page=1&amp;search=name&amp;keyword=asjashj" CvType="AnyWordGroup" DesignTimeRectangle="443, 727, 1318, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Tidak menemukan produk'" FullSelectorArgument="&lt;webctrl class='text' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text' parentid='app' tag='DIV' type='' /&gt;" Guid="ec2f14ed-b2bb-4c0a-8637-216d89994055" ImageBase64="" InformativeScreenshot="8073f57d8d8c8a5f3eb91ac4e44fdb39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Seller Centre' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1076.6666666666667,8863.333333333334" sap2010:WorkflowViewState.IdRef="IfElseIf_588">
+                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1076.6666666666667,11296.666666666666" sap2010:WorkflowViewState.IdRef="IfElseIf_588">
                       <ui:IfElseIf.ConditionBlocks>
                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                           <ui:IfElseIfBlock BlockType="If" Condition="[notFound = &quot;Tidak menemukan produk&quot;]">
@@ -3965,7 +3981,7 @@
                           </ui:IfElseIfBlock>
                           <ui:IfElseIfBlock BlockType="Else">
                             <ui:IfElseIfBlock.Then>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1025.3333333333333,8424.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1611">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1025.3333333333333,10858" sap2010:WorkflowViewState.IdRef="Sequence_1611">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3983,15 +3999,15 @@
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="963.3333333333334,8115.333333333333" sap2010:WorkflowViewState.IdRef="IfElseIf_587">
+                                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="963.3333333333334,10548.666666666666" sap2010:WorkflowViewState.IdRef="IfElseIf_587">
                                   <ui:IfElseIf.ConditionBlocks>
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                       <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;1&quot;]">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1415">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="722.6666666666666,2516.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1415">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
@@ -4001,23 +4017,31 @@
                                               </uix:NGetText.Target>
                                             </uix:NGetText>
                                             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="660.6666666666666,76" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;stok shopee : &quot; + stok.ToString]" />
-                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="660.6666666666666,1750.6666666666667" sap2010:WorkflowViewState.IdRef="IfElseIf_499">
+                                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="660.6666666666666,2091.3333333333335" sap2010:WorkflowViewState.IdRef="IfElseIf_499">
                                               <ui:IfElseIf.ConditionBlocks>
                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                   <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = &quot;0&quot;]">
                                                     <ui:IfElseIfBlock.Then>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,104" sap2010:WorkflowViewState.IdRef="Sequence_1409">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,195.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1409">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_880">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[("0").ToString]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
                                                       </Sequence>
                                                     </ui:IfElseIfBlock.Then>
                                                   </ui:IfElseIfBlock>
                                                   <ui:IfElseIfBlock BlockType="Else">
                                                     <ui:IfElseIfBlock.Then>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.3333333333334,1410" sap2010:WorkflowViewState.IdRef="Sequence_1414">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.3333333333334,1659.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1414">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4055,19 +4079,27 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:IfElseIf>
-                                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547.3333333333334,1206" sap2010:WorkflowViewState.IdRef="IfElseIf_498">
+                                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547.3333333333334,1455.3333333333333" sap2010:WorkflowViewState.IdRef="IfElseIf_498">
                                                           <ui:IfElseIf.ConditionBlocks>
                                                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                               <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Stok 1&quot;).ToString = stok]">
                                                                 <ui:IfElseIfBlock.Then>
-                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_1411">
+                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,326.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1411">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,91.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_177" Text="stok tidak berubah" />
+                                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,91.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_177" Text="stok tidak berubah" />
+                                                                    <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_881">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[("0").ToString]</InArgument>
+                                                                      </Assign.Value>
+                                                                    </Assign>
                                                                   </Sequence>
                                                                 </ui:IfElseIfBlock.Then>
                                                               </ui:IfElseIfBlock>
@@ -4093,7 +4125,7 @@
                                                               </ui:IfElseIfBlock>
                                                               <ui:IfElseIfBlock BlockType="ElseIf" Condition="[stok = &quot;0&quot;]">
                                                                 <ui:IfElseIfBlock.Then>
-                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1413">
+                                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,476" sap2010:WorkflowViewState.IdRef="Sequence_1413">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4105,7 +4137,15 @@
                                                                         <OutArgument x:TypeArguments="x:Object">[row("Stok 1")]</OutArgument>
                                                                       </Assign.To>
                                                                       <Assign.Value>
-                                                                        <InArgument x:TypeArguments="x:Object">["0"]</InArgument>
+                                                                        <InArgument x:TypeArguments="x:Object">[("0").ToString]</InArgument>
+                                                                      </Assign.Value>
+                                                                    </Assign>
+                                                                    <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_882">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[stok1_shopee]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[("0").ToString]</InArgument>
                                                                       </Assign.Value>
                                                                     </Assign>
                                                                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_231" SheetName="Data" WorkbookPath="data\Data Produk.xlsx" />
@@ -8561,14 +8601,14 @@
             </uix:NApplicationCard>
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1172.6666666666667,86" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[stok1_tokped]" />
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1172.6666666666667,86" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[stok1_shopee]" />
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1172.6666666666667,2867.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1172.6666666666667,2862.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_3">
               <TryCatch.Try>
-                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="649.3333333333334,2631.3333333333335" sap2010:WorkflowViewState.IdRef="IfElseIf_684">
+                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547.3333333333334,2626.6666666666665" sap2010:WorkflowViewState.IdRef="IfElseIf_684">
                   <ui:IfElseIf.ConditionBlocks>
                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                       <ui:IfElseIfBlock BlockType="If" Condition="[row(&quot;Jumlah Pilihan&quot;).ToString = &quot;1&quot;]">
                         <ui:IfElseIfBlock.Then>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1873">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,412" sap2010:WorkflowViewState.IdRef="Sequence_1873">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Int32" Name="stok1" />
                             </Sequence.Variables>
